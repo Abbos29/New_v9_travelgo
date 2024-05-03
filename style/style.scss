@@ -7,7 +7,7 @@
 //     font-style: normal;
 // }
 
-$colorMain: rgb(0, 197, 0);
+$colorMain: rgb(0, 219, 0);
 
 // GLOBAL
 
@@ -194,14 +194,18 @@ nav {
     align-items: center;
     justify-content: center;
 
-    background-image: url(/img/hero-bg.jpg);
+    background-image: url(../img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     color: #fff;
 
-    box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 0 1000px 2000px rgba(0, 0, 0, 0.5) inset;
+
+    @media (min-width: 1600px) {
+        height: 800px;
+    }
 
     /* .hero__wrapper */
     &__wrapper {
@@ -333,6 +337,12 @@ nav {
     }
     /* .contacts__map */
     &__map {
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
     }
 }
 .form {
@@ -399,6 +409,19 @@ nav {
     }
     /* .footer__row */
     &__row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        opacity: 0.7;
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -422,9 +445,9 @@ body:has(.thanks) {
         align-items: center;
         text-align: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
 
-        h2 {
+        h1 {
             font-size: 30px;
         }
 
@@ -442,5 +465,38 @@ body:has(.thanks) {
         }
     }
 }
-.container {
+
+
+
+
+// TERMS
+.terms {
+    padding: 100px 0;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    /* .terms__wrapper */
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h3 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        p,li {
+            font-size: 18px;
+            line-height: 1.3;
+        }
+
+    }
 }
