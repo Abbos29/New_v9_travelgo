@@ -149,7 +149,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/img/hero-bg.jpg);
+  background-image: url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -364,7 +364,7 @@ body:has(.thanks) {
   flex-direction: column;
   gap: 20px;
 }
-.thanks__box h2 {
+.thanks__box h1 {
   font-size: 30px;
 }
 .thanks__box a {
